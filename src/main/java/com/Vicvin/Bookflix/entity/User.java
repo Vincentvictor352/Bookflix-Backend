@@ -1,19 +1,20 @@
 package com.Vicvin.Bookflix.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import javax.management.relation.Role;
+import com.Vicvin.Bookflix.entity.Role;
+
+
 
 @Entity
-@Data
-@Builder
+@Table(name = "users")
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "users")
+@Builder
+@Data
 public class User {
 
     @Id
